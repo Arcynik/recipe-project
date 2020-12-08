@@ -1,6 +1,8 @@
 # recipe-project
 
 Technical experiment I made for Aqsone's recruitement process.
+The app is developped with a desktop first approach.
+
 I would recommend to run
 ```
 npm install

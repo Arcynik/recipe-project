@@ -11,8 +11,6 @@
             </v-col>
         </v-row>
     </v-container>
-    <!-- End of recipes' list -->
-    <!-- Start of one recipe's dialog modal  -->
     <recipe-modal :recipe=recipe :open=open @close="closeRecipe"></recipe-modal>
   </div>
 </template>

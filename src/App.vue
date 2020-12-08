@@ -5,8 +5,9 @@
       color="green"
       dark
     >
+    <img class="logo" max-height="20" max-width="100" src="./assets/logo.png"/>
     <h2>{{ projectTitle }}</h2>
-    <h3>{{ name }} / {{ date }}</h3>
+    <h5>{{ name }} / {{ date }}</h5>
     </v-app-bar>
     <v-main>
       <Search/>
@@ -27,7 +28,7 @@ export default {
   data() {
     return {
       name: 'Léa Fontaine',
-      projectTitle: 'Aqsone Vue Project',
+      projectTitle: 'Vue Recipe Project',
       date: 'december 2020'
     }
   }
@@ -37,5 +38,9 @@ export default {
     .v-toolbar__content {
       display: flex;
       justify-content: space-between;
+    }
+    .logo {
+      max-width: 150px;
+      height: auto;
     }
 </style>

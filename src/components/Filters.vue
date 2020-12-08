@@ -11,7 +11,12 @@
 import EventBus from '../eventBus'
 export default {
   name: 'Filters',
-  props: ['recipes'],
+  props: {
+      recipes: {
+          type: Array,
+          required: true
+      }
+  },
   data() {
     return {
         glutenActive: true,

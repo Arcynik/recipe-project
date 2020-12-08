@@ -1,7 +1,7 @@
 <template>
   <div id="search">
     <v-container>
-      <v-form>
+      <v-form onSubmit="return false;">
         <v-text-field v-model="inputSearch"
         label="I would love to eat..."
         color="success"
@@ -46,13 +46,11 @@ export default {
             })
     },
     filteredGlutenRecipes() {
-      console.log('gluten')
       this.recipes = this.recipes.filter((recipe) => {
           return !recipe.recipe.cautions.includes('Gluten')
       })
     },
     filteredAlcoholRecipes() {
-      console.log('alcohol')
         this.recipes = this.recipes.filter((recipe) => {
             return recipe.recipe.healthLabels.includes('Alcohol-Free')
         })
@@ -67,14 +65,12 @@ export default {
     })
     EventBus.$on('removeFilterGluten', (alcoholActive) => {
         this.search(this.inputSearch)
-        console.log('alcoholActive : ' + alcoholActive)
         if (alcoholActive === true) {
           this.filteredAlcoholRecipes()
         }
     })
     EventBus.$on('removeFilterAlcohol', (glutenActive) => {
         this.search(this.inputSearch)
-        console.log('glutenActive : ' + glutenActive)
         if (glutenActive === true) {
           this.filteredGlutenRecipes()
         }
@@ -94,6 +90,9 @@ export default {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+  }
+  .v-text-field, input {
+    min-width: 25em;
   }
   .v-input {
     margin-right: 15px;

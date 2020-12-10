@@ -11,7 +11,7 @@ then
 ```
 npm run serve
 ```
-for a local working version of the app
+for a local working version of the app.
 
 /!\ The public API called by the app only authorizes 5 requests (per minute per user) which means that if you perform more than 5 researches in a minute, you won't get any results.
 

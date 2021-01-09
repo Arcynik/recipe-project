@@ -42,7 +42,8 @@ export default {
             healthLabels: [],
             image: '',
             ingredients: [],
-            dailyIntake: ''
+            dailyIntake: '',
+            totalDaily: '',
         }
     }
   },

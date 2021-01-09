@@ -1,9 +1,9 @@
 # recipe-project
 
-Technical experiment I made for Aqsone's recruitement process.
-The app is developped with a desktop first approach.
+Technical experiment I made for Aqsone's recruitment process.
+The app is developed with a desktop first approach.
 
-I would recommend to run
+I would recommend running
 ```
 npm install
 ```
@@ -13,7 +13,7 @@ npm run serve
 ```
 for a local working version of the app.
 
-/!\ The public API called by the app only authorizes 5 requests (per minute per user) which means that if you perform more than 5 researches in a minute, you won't get any results.
+`! Warning !` The public API called by the app only authorizes 5 requests (per minute, per user) which means that if you perform more than 5 researches in a minute, you won't get any results.
 
 ## Project setup
 ```

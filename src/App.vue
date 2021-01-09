@@ -5,7 +5,7 @@
       color="green"
       dark
     >
-    <img class="logo" max-height="20" max-width="100" src="./assets/logo.png"/>
+    <img class="logo" max-height="20" max-width="100" src="./assets/logo.png" alt="logo"/>
     <h2>{{ projectTitle }}</h2>
     <h5>{{ name }} / {{ date }}</h5>
     </v-app-bar>

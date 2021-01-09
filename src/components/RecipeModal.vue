@@ -40,7 +40,7 @@
             
             <div class="flex-ingredients-info">
                 <v-list-item v-if="recipe.ingredients.length">
-                    <div name="ingredient" class="ingredient-list">
+                    <div id="ingredient" class="ingredient-list">
                         <v-list-item-title class="ingredient-title">Ingredients</v-list-item-title>
                         <v-list-item-subtitle v-for="(ingredient, index) in recipe.ingredients" :key="index" class="ingredient-line">
                             <v-img :aspect-ratio="16/9" contain max-height="80" max-width="115" :src="ingredient.image" class="ingredient-pic"></v-img>
